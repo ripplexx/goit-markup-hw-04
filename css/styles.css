@@ -74,6 +74,7 @@ ul {
     color: #404BBF;
     flex: 1;
     margin-left: 56px;
+    
 }
 
 .menu .menu-ul {
@@ -101,24 +102,29 @@ ul {
     text-decoration: none;
     margin: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 
-.current::after{
-    content:'';
-    position: absolute;
-    bottom: -1px;
-    left:29.3%;
-    top:5%;
-    right:2%;
-    background-color:#404BBF;
-    width: 2.5%;
-    height: 4px;
-    border-radius: 2px;
-    margin:20px;
+.menu-item a .current-studio{
+    position: relative;
     
     
-    
+}
+
+.current-studio::after{
+        content: '';
+        position: absolute;
+        bottom:-1px;
+        left:0px;
+        top:10px;
+        background-color: #404BBF;
+        width: 48px;
+        height: 4px;
+        border-radius: 2px;
+        margin-top:60px;
+        margin-left: 575px;
+
 }
 
 
