@@ -74,7 +74,7 @@ ul {
     color: #404BBF;
     flex: 1;
     margin-left: 56px;
-    
+
 }
 
 .menu .menu-ul {
@@ -86,8 +86,8 @@ ul {
 .menu .menu-ul .menu-item {
     margin: 20px;
     gap: 40px;
-    
-    
+
+
 
 }
 
@@ -102,37 +102,38 @@ ul {
     text-decoration: none;
     margin: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 }
 
 
-.menu-item a .current-studio{
+
+
+.menu-ul .menu-item:first-child .current-studio {
     position: relative;
-    
-    
 }
 
-.current-studio::after{
-        content: '';
-        position: absolute;
-        bottom:-1px;
-        left:0px;
-        top:10px;
-        background-color: #404BBF;
-        width: 48px;
-        height: 4px;
-        border-radius: 2px;
-        margin-top:60px;
-        margin-left: 575px;
-
+.menu-ul .menu-item:first-child .current-studio::after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    background-color:#404BBF;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
 }
+
+
+
+
+
 
 
 
 .menu .menu-ul .menu-item a:hover,
 .menu .menu-ul .menu-item a:focus {
     color: #404BBF;
-    
+
 
 }
 
@@ -179,14 +180,14 @@ ul {
     height: 600px;
     padding: 188px;
     background-image: linear-gradient(to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
         url('../images/hero-background.jpg');
     background-size: cover;
     max-width: 1440px;
     background-image: url("../images/people-office.png");
     position: relative;
-    
+
 
 
 }
@@ -200,7 +201,7 @@ ul {
     bottom: 0;
     background-color: #2E2F42;
     opacity: .5;
-    
+
 
 }
 
@@ -211,7 +212,7 @@ ul {
     max-width: 500px;
     text-align: center;
     margin: 0 auto;
-    
+
 
 }
 
@@ -223,10 +224,10 @@ ul {
     line-height: 1.07143;
     letter-spacing: 0.02em;
     text-align: center;
-    color:white;
+    color: white;
     margin-bottom: 48px;
     z-index: 999;
-    
+
 }
 
 
@@ -254,8 +255,8 @@ button:focus {
     color: #fff;
     background-color: #404BBF;
 
-    
-    
+
+
 }
 
 .features {
@@ -265,8 +266,8 @@ button:focus {
     background-position: center center;
     background-size: cover;
     max-width: 1440px;
-    
-   
+
+
 }
 
 
@@ -294,7 +295,7 @@ button:focus {
     margin: 0;
     padding-bottom: 60px;
     padding-top: 60px;
-    
+
 
 }
 
@@ -303,7 +304,7 @@ button:focus {
     padding: 120px 0;
     margin: 0;
     margin: 0 auto;
-    
+
 }
 
 .team h2 {
@@ -342,8 +343,8 @@ button:focus {
     align-items: center;
     justify-content: center;
     max-width: 1440px;
-    
-    
+
+
 
 
 
@@ -358,10 +359,10 @@ button:focus {
 
 .team-items h3,
 .team-items p {
-    
+
     justify-content: center;
     padding: 10px 10px;
-    
+
 
 }
 
@@ -396,9 +397,9 @@ button:focus {
     position: relative;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
-    
-    
-    
+
+
+
 
 }
 
@@ -426,9 +427,9 @@ button:focus {
 
 
 
-.portfolio-items:hover{
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-    transition: box-shadow 250ms cubic-bezier(0.4,0,0.2,1);
+.portfolio-items:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -443,23 +444,23 @@ button:focus {
     padding-top: 36px;
     padding-bottom: 36px;
     margin: 0 auto;
-    
+
 
 
 }
 
-.footer-right{
+.footer-right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align:center;
-    justify-content:center;
-    margin-left:12px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 12px;
     margin-top: -100px;
     margin-right: 130px;
     margin-bottom: 50px;
 
-    
+
 
 }
 
@@ -525,21 +526,24 @@ ul {
 
 }
 
-.icon-antenna,.icon-clock, .icon-diagram,.icon-astronaut{
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
     width: 64px;
-    
+
 }
 
 
 
-.icons{
+.icons {
     display: flex;
-    gap:24px;
-    
-    
+    gap: 24px;
+
+
 }
 
-.icon-item{
+.icon-item {
     width: 264px;
     height: 112px;
     display: flex;
@@ -552,19 +556,19 @@ ul {
 
 }
 
-.social-media{
+.social-media {
     display: flex;
     gap: 24px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    
+
+
 }
 
 
 
-.social-media .social-media-item{
+.social-media .social-media-item {
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -574,39 +578,42 @@ ul {
     justify-content: center;
     
 
+
+
 }
 
 
 
 .social-media .social-media-item:hover,
-.social-media .social-media-item:focus{
+.social-media .social-media-item:focus {
     background-color: #31D0AA;
-    
+
 }
 
-.social-media .social-media-item .icon-instagram, 
-.icon-twitter, .icon-facebook, .icon-linkedin{
+.social-media .social-media-item .icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin {
     width: 16px;
     height: 16px;
     
-    
-    
+
+
 }
 
 
-.title-button{
+
+
+.title-button {
     position: relative;
     z-index: 999;
 }
 
 
 .container {
-    
-    width:1158px;
+
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
-
-
-
 
