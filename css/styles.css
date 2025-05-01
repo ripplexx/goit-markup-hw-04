@@ -200,7 +200,7 @@ ul {
     left: 0;
     bottom: 0;
     background-color: #2E2F42;
-    opacity: .5;
+    opacity: .7;
 
 
 }
@@ -412,29 +412,44 @@ button:focus {
 }
 
 
-
 .overlay{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.overlay-text{
     position: absolute;
     bottom: -100%;/*overlay tam arkasından çıkışı*/
     left: 0;
     width:100%;/*Ana resim boyutunda*/
     height: 100%;/* Ana resim genişliğinde*/
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color:#4D5AE5;
     transition: bottom 0.4s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#fff;
 }
+
 
 
 
 /*overlay çıkış hizası*/
-.image-wrapper:hover .overlay {
-    bottom: 0;
+.image-wrapper:hover .overlay-text {
+    bottom:28%;
+    transform: translateY(0%);
+    
+    
     
 }
 
-
+.portfolio-card-wrap{
+    border: 1px solid var(--cornflower);
+    border-top: none;
+    padding: 32px 16px;
+    margin-bottom: 8px;
+}
 
 
 
