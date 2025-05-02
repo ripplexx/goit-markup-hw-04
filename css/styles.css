@@ -359,9 +359,13 @@ button:focus {
 
 .team-items h3,
 .team-items p {
-
+    display: flex;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap:8px;
     padding: 10px 10px;
+    
 
 
 }
@@ -376,7 +380,7 @@ button:focus {
 
 }
 
- .portfolio-ul {
+.portfolio-ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -388,7 +392,7 @@ button:focus {
 
 }
 
- .portfolio-items {
+.portfolio-items {
     padding: 0;
     text-align: center;
     flex: 1 1 calc(33.333%-10px);
@@ -399,7 +403,8 @@ button:focus {
     overflow: hidden;
     /*portfolio card ebatları*/
     width: 360px;
-    height:420px;
+    height: 420px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
 }
 
@@ -412,24 +417,82 @@ button:focus {
 }
 
 
-.overlay{
-    position: relative;
-    overflow: hidden;
+.app-info {
+    
+    width: 360px;
+    height: 120px;
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    gap:8px;
+    
+    
+    
+
 }
 
 
-.overlay-text{
+.app-info h3{
+    white-space: nowrap;
+    font-size: 16px;
+    padding-right: 260px;
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    align-items: flex-start;
+    
+    
+
+}
+
+.app-info p{
+    padding-right:260px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    
+    
+}
+
+.app-info h3,p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+
+
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+.overlay-text {
     position: absolute;
-    bottom: -100%;/*overlay tam arkasından çıkışı*/
+    bottom: -100%;
+    /*overlay tam arkasından çıkışı*/
     left: 0;
-    width:100%;/*Ana resim boyutunda*/
-    height: 100%;/* Ana resim genişliğinde*/
-    background-color:#4D5AE5;
+    width: 100%;
+    /*Ana resim boyutunda*/
+    height: 100%;
+    /* Ana resim genişliğinde*/
+    background-color: #4D5AE5;
     transition: bottom 0.4s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#fff;
+    color: #fff;
 }
 
 
@@ -437,19 +500,14 @@ button:focus {
 
 /*overlay çıkış hizası*/
 .image-wrapper:hover .overlay-text {
-    bottom:28%;
+    bottom: 28%;
     transform: translateY(0%);
-    
-    
-    
+
+
+
 }
 
-.portfolio-card-wrap{
-    border: 1px solid var(--cornflower);
-    border-top: none;
-    padding: 32px 16px;
-    margin-bottom: 8px;
-}
+
 
 
 
@@ -661,6 +719,3 @@ link:focus {
     margin: 0 auto;
     padding: 0 15px;
 }
-
-
-
